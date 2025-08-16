@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  padding-left: 25px;
+  background-color: #0e0e0e;
+  padding-right: 25px;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #0e0e0e;
+}
+
+.navbar h2 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.navbar ul li {
+  color: #ccc;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.li a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+.li a.active {
+  font-weight: bold;
+  color: white;
+  text-shadow: #0678c4;
+}
+.a{
+  color: white;
+}
+
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 50px;
+  flex-wrap: wrap;
+  padding-inline: 8rem;
+  
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero .dot {
+  color: #4f6df5;
+}
+.dot{
+  color: #4f6df5;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 12px 25px;
+  background-color: #4f6df5;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+}
+.btn:hover{
+  background-color: #4162f5;
+}
+
+.image img {
+  width: 280px;
+  height: auto;
+  border-radius: 800px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-image {
+    margin-top: 30px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .btn {
+    padding: 10px 20px;
+  }
+}
+
+/* Page headings */
+.page-header {
+  text-align: center;
+  padding: 50px 0;
+  font-size: 2rem;
+}
+
+/* Content wrapper */
+.content {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.projects, .skills-list, .contact-info { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+.project { 
+    background: black; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    flex: 1 1 300px; 
+    align-items: center;
+}
+
+.project:hover {
+  background-color: rgb(73, 73, 73);
+}
+
+.btn { 
+    display: inline-block; 
+    background: #3498db; 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    margin-top: 10px; 
+}
+.btn:hover {
+    background: #0678c4;
+}
